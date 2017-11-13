@@ -1,0 +1,46 @@
+.display{
+	margin-left: 200px;
+	margin-right: 200px;
+    background-color: #f3e9fc;
+    height: 500px;
+}
+
+.definitions{
+	background-color: #c18ff0;
+	height: 100px;
+    width: 100%;
+    text-align: left;
+    font-family: Cooper Black;
+    font-weight: 900; 
+}
+
+#dictionary{
+	padding-top: 40px;
+    padding-left: 20px;
+    color: white;
+}
+.instructions{
+	text-align: left;
+	font-family: Calibri;
+	padding-left: 20px;
+	font-weight: bold;
+}
+.button{
+	background-color: #3366ff;
+	border-radius: 6px;
+	padding: 15px 32px;
+	color: white;
+	font-weight: bold;
+}
+#query{
+	height: 40px;
+    width: 15%;
+    border-radius: 6px;
+    margin-left: 20px;
+}
+
+#result{
+	font-weight: bold;
+	font-family: Showcard Gothic;
+	padding-left: 20px;
+}
