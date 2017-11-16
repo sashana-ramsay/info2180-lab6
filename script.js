@@ -1,8 +1,6 @@
-function main() {
-	var search = document.getElementById("search");
-	var searchall = document.getElementById("searchall");
-	
-	search.onclick = function(){
+/* global $ */
+$(document).ready(function(){
+	$('#search').click(function(){
 		$.ajax({
 			type: 'GET',
 			url: 'request.php',
@@ -10,13 +8,11 @@ function main() {
 			success: function(data){
 				$('#result').html(data);
 			}
-		});
-           
-    };
-    
-    
-    searchall.onclick =  function(){
-        $.ajax({
+		})
+	});
+	
+	$('#searchall').click(function(){
+		$.ajax({
 			type: 'GET',
 			url: 'request.php',
 			data:{q: '&all=true'},
@@ -30,8 +26,3 @@ function main() {
 					$("#result ol").append('<li>'+Response+'</li>');
 				});
 			}
-	}
-	
-window.onload = function(){
-	main();
-}
